@@ -315,3 +315,28 @@ setTimeout(object.logMessage, 1000);
 //undefined
 
 
+
+// Q9) How can you call logMessage function so that it logs "Hello, World!" ?
+//  const object = {
+//     message: 'Hello, World!'
+// };
+// function logMessage() {
+//     console.log(this.message); // "Hello, World!"
+// }
+// Q10)
+// const object = {
+//     who: 'World',
+//     greet() {
+//         return `Hello, ${this.who}!`;
+//     },
+//     farewell: () => {
+//         return `Goodbye, ${this.who}!`;
+//     }
+// };
+// console.log(object.greet()); // What is logged?
+// console.log(object.farewell()); // What is logged?
+// Q11) Write a JS program to deep copy an object dynamically.You should not use JSON.Stringify or
+// JSON.parse.
+//     Hint:: You can use recursion in this.
+
+
