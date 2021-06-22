@@ -1,20 +1,18 @@
-class Person{
-    occupation = "SDE";
 
-    constructor(name,company){
-        this.name=name;
-        this.company=company;
+class Person {
+    constructor(name) {
+        this.name = name;
+        this.company = "pepcoding";
     }
-
-    setDetails(prof){
-        this.profile= prof;
+    getDetails = () => {
+        console.log(this)
+    }
+    setDetails(name, occupation) {
+        this.occupation = occupation;
     }
 }
 
-let obj1= new Person("naman");
-let obj2= new Person("aye","yo");
-console.log(obj1,obj2);
-obj1.setDetails("what");
-obj2.setDetails("ohkk");
-console.log(obj1, obj2);
 
+let obj1 = new Person("bhavesh");
+
+document.querySelector("button").addEventListener("click", obj1.getDetails);
